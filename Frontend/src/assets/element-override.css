@@ -1,0 +1,171 @@
+/* Element Plus theme overrides to match dark navy theme */
+
+/* Message Box (Confirm/Alert dialogs) */
+.el-message-box {
+  background-color: #0f1c2e !important;
+  border: 1px solid rgba(59, 130, 246, 0.3) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6) !important;
+}
+
+.el-message-box__title {
+  color: #ffffff !important;
+}
+
+.el-message-box__content {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.el-message-box__message p {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Buttons in dialogs */
+.el-message-box__btns .el-button--default,
+.el-message-box__btns .el-button.el-button--default {
+  background-color: #1e3a5f !important;
+  border-color: rgba(59, 130, 246, 0.3) !important;
+  color: #ffffff !important;
+}
+
+.el-message-box__btns .el-button--default:hover,
+.el-message-box__btns .el-button.el-button--default:hover {
+  background-color: #2d4a6f !important;
+  border-color: rgba(59, 130, 246, 0.4) !important;
+  color: #ffffff !important;
+}
+
+.el-message-box__btns .el-button--primary {
+  background-color: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+  color: #0a1628 !important;
+}
+
+.el-message-box__btns .el-button--primary:hover {
+  background-color: #2563eb !important;
+  border-color: #2563eb !important;
+  color: #0a1628 !important;
+}
+
+/* Light theme overrides for message box buttons */
+[data-theme='light'] .el-message-box {
+  background-color: #ffffff !important;
+  border: 1px solid #d1d5db !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+[data-theme='light'] .el-message-box__title {
+  color: #1f2937 !important;
+}
+
+[data-theme='light'] .el-message-box__content {
+  color: #374151 !important;
+}
+
+[data-theme='light'] .el-message-box__message p {
+  color: #4b5563 !important;
+}
+
+[data-theme='light'] .el-message-box__btns .el-button--default,
+[data-theme='light'] .el-message-box__btns .el-button.el-button--default {
+  background-color: #e5e7eb !important;
+  border-color: #d1d5db !important;
+  color: #1f2937 !important;
+}
+
+[data-theme='light'] .el-message-box__btns .el-button--default:hover,
+[data-theme='light'] .el-message-box__btns .el-button.el-button--default:hover {
+  background-color: #d1d5db !important;
+  border-color: #9ca3af !important;
+}
+
+[data-theme='light'] .el-message-box__btns .el-button--primary {
+  background-color: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+  color: #ffffff !important;
+}
+
+[data-theme='light'] .el-message-box__btns .el-button--primary:hover {
+  background-color: #2563eb !important;
+  border-color: #2563eb !important;
+  color: #ffffff !important;
+}
+
+[data-theme='light'] .el-message-box__headerbtn {
+  color: #6b7280 !important;
+}
+
+[data-theme='light'] .el-message-box__headerbtn:hover {
+  color: #3b82f6 !important;
+}
+
+/* Close button */
+.el-message-box__headerbtn {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.el-message-box__headerbtn:hover {
+  color: #3b82f6 !important;
+}
+
+/* Icon colors */
+.el-message-box__status.el-icon {
+  color: #3b82f6 !important;
+}
+
+/* Warning icon */
+.el-message-box__status.el-message-box-icon--warning {
+  color: #f59e0b !important;
+}
+
+/* Error icon */
+.el-message-box__status.el-message-box-icon--error {
+  color: #ef4444 !important;
+}
+
+/* Success icon */
+.el-message-box__status.el-message-box-icon--success {
+  color: #10b981 !important;
+}
+
+/* Input fields in dialogs */
+.el-message-box .el-input__wrapper {
+  background-color: #0a1628 !important;
+  border-color: rgba(59, 130, 246, 0.2) !important;
+  box-shadow: none !important;
+}
+
+.el-message-box .el-input__wrapper:hover {
+  border-color: rgba(59, 130, 246, 0.3) !important;
+}
+
+.el-message-box .el-input__wrapper.is-focus {
+  border-color: #3b82f6 !important;
+}
+
+.el-message-box .el-input__inner {
+  color: #ffffff !important;
+}
+
+/* Backdrop */
+.el-overlay {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Select dropdown */
+.el-select-dropdown {
+  background-color: #0f1c2e !important;
+  border-color: rgba(59, 130, 246, 0.3) !important;
+}
+
+.el-select-dropdown__item {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.el-select-dropdown__item:hover {
+  background-color: rgba(59, 130, 246, 0.1) !important;
+}
+
+.el-select-dropdown__item.is-selected {
+  color: #3b82f6 !important;
+  background-color: rgba(59, 130, 246, 0.15) !important;
+}

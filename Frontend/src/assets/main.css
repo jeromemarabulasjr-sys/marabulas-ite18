@@ -1,0 +1,57 @@
+@import './base.css';
+
+/* Make app fluid and responsive while capping at the design max size */
+#app {
+  max-width: var(--app-max-width);
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 1.25rem;
+  font-weight: normal;
+  background: var(--color-background);
+  overflow: visible;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  align-items: flex-start;
+}
+
+@media (min-width: 1200px) {
+  .left {
+    flex: 1;
+  }
+  .right {
+    width: var(--right-width);
+    flex: 0 0 var(--right-width);
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    flex-direction: column;
+  }
+  .right {
+    width: 100%;
+  }
+}

@@ -1,0 +1,132 @@
+/* Dark theme color palette */
+:root {
+  /* Dark theme base colors - matching the navy blue example */
+  --vt-c-white: #0a1628; /* Deep navy background */
+  --vt-c-white-soft: #0f1c2e; /* Slightly lighter for cards/panels */
+  --vt-c-white-mute: #060d19; /* Darkest for depth */
+
+  --vt-c-black: #ffffff; /* Pure white text */
+  --vt-c-black-soft: #e2e8f0; /* Secondary text */
+  --vt-c-black-mute: #94a3b8; /* Muted text */
+
+  --vt-c-indigo: #3b82f6; /* Bright blue accent */
+  --vt-c-indigo-dark: #2563eb; /* Darker blue for hover */
+
+  /* App layout globals - responsive using clamp */
+  --app-max-width: 1920px;
+  --app-max-height: 1080px;
+  --sidebar-width: clamp(240px, 18vw, 360px);
+  --right-width: clamp(320px, 22vw, 480px);
+
+  /* Updated dividers for better visibility */
+  --vt-c-divider-light-1: rgba(255, 255, 255, 0.1);
+  --vt-c-divider-light-2: rgba(255, 255, 255, 0.08);
+  --vt-c-divider-dark-1: rgba(255, 255, 255, 0.15);
+  --vt-c-divider-dark-2: rgba(255, 255, 255, 0.1);
+
+  /* Text colors */
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(255, 255, 255, 0.95);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(255, 255, 255, 0.9);
+}
+
+/* semantic color variables for this project */
+:root {
+  /* Background colors */
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+  --color-background-overlay: rgba(0, 0, 0, 0.4);
+
+  /* Border colors */
+  --color-border: rgba(59, 130, 246, 0.2);
+  --color-border-hover: rgba(59, 130, 246, 0.3);
+
+  /* Text colors */
+  --color-heading: var(--vt-c-text-light-2);
+  --color-text: var(--vt-c-text-light-2);
+  --color-text-muted: var(--vt-c-black-mute);
+  --color-accent: var(--vt-c-indigo);
+  --color-accent-hover: var(--vt-c-indigo-dark);
+
+  /* Button colors */
+  --color-button-bg: #1e3a5f;
+  --color-button-hover: #2d4a6f;
+  --color-button-text: #ffffff;
+
+  /* Layout */
+  --section-gap: 160px;
+  --border-radius: 6px;
+}
+
+/* Light theme overrides when user chooses light theme. Applied by setting
+   `data-theme="light"` on the <html> element. */
+:root[data-theme='light'] {
+  --color-background: #ffffff;
+  --color-background-soft: #f8f9fb;
+  --color-background-mute: #f2f4f7;
+
+  --color-border: rgba(30, 41, 59, 0.08);
+  --color-border-hover: rgba(30, 41, 59, 0.12);
+
+  --color-heading: #0f172a;
+  --color-text: rgba(15, 23, 42, 0.92);
+  --color-text-muted: rgba(15, 23, 42, 0.56);
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+
+  --color-button-bg: #eef2ff;
+  --color-button-hover: #e0e7ff;
+  --color-button-text: #0f172a;
+}
+
+/* Compact mode reduces the default sidebar width. Toggle by setting
+   `data-compact="true"` on the <html> element. */
+:root[data-compact='true'] {
+  --sidebar-width: clamp(160px, 14vw, 280px);
+}
+
+/* Remove light mode override to force dark theme */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

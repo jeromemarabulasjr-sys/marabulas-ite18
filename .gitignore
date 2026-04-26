@@ -1,0 +1,30 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local env files
+**/.env
+**/.env.*
+
+# Frontend build artifacts
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.vite/
+
+# Backend (Laravel) artifacts
+laragon/www/Backend/vendor/
+laragon/www/Backend/node_modules/
+laragon/www/Backend/storage/logs/*.log
+laragon/www/Backend/storage/framework/cache/data/*
+laragon/www/Backend/storage/framework/sessions/*
+laragon/www/Backend/storage/framework/views/*
+laragon/www/Backend/public/storage
+
+# Ignore Laragon runtime bundle, keep Backend app source only
+laragon/*
+!laragon/www/
+laragon/www/*
+!laragon/www/Backend/
+!laragon/www/Backend/**
